@@ -1,3 +1,11 @@
+#IMPORTANT
+
+Clone this project by using "git clone https://github.com/Chingsan53/React_workout_app.git"
+
+Open the project on any code editor you like
+Run the command: "npm install"
+And "npm run start" to see the app open and running in local
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
