@@ -3,14 +3,24 @@ import { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const App = () => {
-  const name = 'Ching';
-  const isNameShowing = true;
-  return (
-    <div className='App'>
-      <h1 class="text-black text-3xl">Bonjour, {isNameShowing ? name : 'User Name'}</h1>
-    </div>
-  );
-}
+class App extends Component {
+  constructor() {
+    super();
 
-export default App;
+    this.state = {
+      name: 'Ching',
+    };
+  }
+
+  render() {
+    return (
+      <div className='App'>
+        <header className='App-header'>
+          <img src={logo} className='App-logo' alt='logo' />
+          <p>Hi {this.state.name}</p>
+          <button>Change Name</button>
+        </header>
+      </div>
+    )
+  }
+}
