@@ -43,12 +43,12 @@ class App extends Component {
 
     return (
       <div className='App'>
-          <SearchBox 
-            className='search-box'
-            onChangeHandler={onSearchChange} 
-            placeholder='search monsters'
-            />
-          <CardList monsters={filteredMonsters} />
+        <SearchBox
+          className='search-box'
+          onChangeHandler={onSearchChange}
+          placeholder='search monsters'
+        />
+        <CardList monsters={filteredMonsters} />
       </div>
     );
   }
